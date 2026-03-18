@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AnuraOS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Desktop -->
+  <div id="desktop" class="desktop">
+    <!-- Wallpaper -->
+    <div class="wallpaper"></div>
+    
+    <!-- Dock -->
+    <div id="dock" class="dock">
+      <div class="dock-item active" data-app="terminal">⚡</div>
+      <div class="dock-item" data-app="browser">🌐</div>
+      <div class="dock-item" data-app="files">📁</div>
+      <div class="dock-item" data-app="notepad">📝</div>
+      <div class="dock-item" data-app="settings">⚙️</div>
+    </div>
+    
+    <!-- Taskbar -->
+    <div id="taskbar" class="taskbar">
+      <div class="taskbar-start">
+        <span>🍎</span>
+        <span>AnuraOS</span>
+      </div>
+      <div id="taskbar-apps" class="taskbar-apps"></div>
+      <div class="taskbar-time" id="time"></div>
+    </div>
+  </div>
+  
+  <!-- Windows -->
+  <div id="windows-container"></div>
+  
+  <!-- Context Menu -->
+  <div id="context-menu" class="context-menu hidden">
+    <div class="menu-item" data-action="new-folder">New Folder</div>
+    <div class="menu-item" data-action="new-file">New File</div>
+    <div class="menu-item" data-action="refresh">Refresh</div>
+    <div class="menu-separator"></div>
+    <div class="menu-item" data-action="properties">Properties</div>
+  </div>
+
+  <script src="desktop.js"></script>
+</body>
+</html>
